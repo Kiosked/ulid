@@ -1,6 +1,6 @@
 {
   "name": "@kiosked/ulid",
-  "version": "2.4.2",
+  "version": "3.0.0",
   "description": "A universally-unique, lexicographically-sortable, identifier generator",
   "main": "./dist/index.js",
   "repository": {
