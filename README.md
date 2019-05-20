@@ -10,6 +10,10 @@
 [![Build Status](https://travis-ci.org/ulid/javascript.svg?branch=master)](https://travis-ci.org/ulid/javascript) [![codecov](https://codecov.io/gh/ulid/javascript/branch/master/graph/badge.svg)](https://codecov.io/gh/ulid/javascript)
 [![npm](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/ulid)
 
+# THIS IS A FORK
+
+This package was forked from the actively supported & stable [ulid](https://github.com/ulid/javascript) library. The fork was created to improve compatibility in older browsers.
+
 # Universally Unique Lexicographically Sortable Identifier
 
 UUID can be suboptimal for many uses-cases because:
