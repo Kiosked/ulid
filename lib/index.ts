@@ -16,6 +16,12 @@ function createError(message: string): LibError {
   return err
 }
 
+function isInteger(value) {
+  return typeof value === "number" &&
+    isFinite(value) &&
+    Math.floor(value) === value;
+}
+
 // These values should NEVER change. If
 // they do, we're no longer making ulids!
 const ENCODING = "0123456789ABCDEFGHJKMNPQRSTVWXYZ" // Crockford's Base32
@@ -73,7 +79,7 @@ export function encodeTime(now: number, len: number): string {
   if (now < 0) {
     throw createError("time must be positive")
   }
-  if (Number.isInteger(now) === false) {
+  if (isInteger(now) === false) {
     throw createError("time must be an integer")
   }
   let mod
